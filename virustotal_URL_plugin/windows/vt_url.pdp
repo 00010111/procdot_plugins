@@ -1,0 +1,13 @@
+Name = virustotal URL plugin
+Author = @b00010111
+Version = 1.0
+Type = ContextMenuItemForGraph
+Description = search URL on virustotal
+Architecture = WindowsBatchScript
+File = vt_url.bat
+Priority = 9
+RunHidden = 1
+RunExclusively = 1
+CanOverrideOtherPlugins = 0
+CanOverrideProcDot = 0
+CanBeVerified = 1

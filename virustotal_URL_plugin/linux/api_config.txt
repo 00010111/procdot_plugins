@@ -1,0 +1,4 @@
+[virustotal]
+# define api key used to access virustotal
+apikey = INSERT-VIRUSTOTAL-API-KEY-HERE
+verbose = True
