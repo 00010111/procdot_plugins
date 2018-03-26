@@ -1,5 +1,8 @@
 # procdot_plugins
 Plugins for the ProcDot.<br/>
+Credis:
+* @ProcDOT for actually writing ProcDOT
+* @bmmaloney97 for his tutorial on writing Plugins for ProcDOT
 
 How to check if the used python modules are installed:
 * windows: python.exe -c "help('INSERT-MODULE-NAME-HERE')"
