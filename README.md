@@ -1,18 +1,18 @@
-# procdot_plugins
-Plugins for the ProcDot.<br/>
-Credis:
+# procdot_plug-ins
+Plug-ins for the ProcDot.<br/>
+Credits:
 * @ProcDOT for actually writing ProcDOT
-* @bmmaloney97 for his tutorial on writing Plugins for ProcDOT
+* @bmmaloney97 for his tutorial on writing plug-ins for ProcDOT
 
 How to check if the used python modules are installed:
 * windows: python.exe -c "help('INSERT-MODULE-NAME-HERE')"
 * linux:  python3 -c "help('INSERT-MODULE-NAME-HERE')"
 * expect something like "No Python documentation found for ..." in case of missing module
-## VirusTotal URL plugin
+## VirusTotal URL plug-in
 Credits: <br/>
-&nbsp;@Didelphodon for the plugin idea<br/>
+&nbsp;@Didelphodon for the plug-in idea<br/>
 Use Case:<br/>
-&nbsp;Submit a URL to VirusTotal via a contextmenue item. Receive report will be shown within ProcDOT.<br/>
+&nbsp;Submit a URL to VirusTotal via a context menu item. Receive report will be shown within ProcDOT.<br/>
 Name:<br/>
 &nbsp;vt_url<br/>
 Requirements:
@@ -25,6 +25,6 @@ Requirements:
   * os
   * time
 Setup:
-* place plugin (Linux: vt_url.py; Windows:vt_url.bat), vt_url.pdp and api_config.txt in ProcDot plugins folder
+* place plug-in (Linux: vt_url.py; Windows:vt_url.bat), vt_url.pdp and api_config.txt in ProcDot plug-ins folder
 * open api_config.txt and fill in your VirusTotal API key 
 * Linux: make vt_url.py executable
