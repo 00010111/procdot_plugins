@@ -1,4 +1,5 @@
 [virustotal]
 # define api key used to access virustotal
 apikey = INSERT-VIRUSTOTAL-API-KEY-HERE
+# if set to False plugin will  not show results per scanning engine
 verbose = True
