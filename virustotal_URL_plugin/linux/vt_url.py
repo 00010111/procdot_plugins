@@ -22,7 +22,7 @@ except Exception as e:
 	# we do not have a Domain in the CurrentNote Details, so we do not what to show this plug-in
 	# if anything else fails above.. we do not want to show this plug-in either
 	print ("we could either not run the verification or the current node does not have a domain")
-	print ("if set CanBeVerified to 0, this exception will always be triggered")	
+	print ("if CanBeVerified is set to 0, this exception will always be triggered")	
 	exit(0)
 
 
