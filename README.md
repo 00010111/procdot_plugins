@@ -12,7 +12,7 @@ How to check if the used python modules are installed:
 Credits: <br/>
 &nbsp;@Didelphodon for the plug-in idea<br/>
 Use Case:<br/>
-&nbsp;Submit a URL to VirusTotal via a context menu item. Receive report will be shown within ProcDOT.<br/>
+&nbsp;Submit a URL to VirusTotal via a context menu item. Received report will be shown within ProcDOT.<br/>
 Name:<br/>
 &nbsp;vt_url<br/>
 Requirements:
