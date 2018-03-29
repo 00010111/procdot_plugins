@@ -24,6 +24,7 @@ Requirements:
 * python modules used, but should be included in default install
   * os
   * time
+  
 Setup:
 * place plug-in (Linux: vt_url.py; Windows:vt_url.bat), vt_url.pdp and api_config.txt in ProcDot plug-ins folder
 * open api_config.txt and fill in your VirusTotal API key 
