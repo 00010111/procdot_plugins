@@ -1,5 +1,5 @@
 # procdot_plug-ins
-Plug-ins for the ProcDot.<br/>
+Plug-ins for [ProcDot](http://procdot.com/) .<br/>
 Credits:
 * @ProcDOT for actually writing ProcDOT
 * @bmmaloney97 for his tutorial on writing plug-ins for ProcDOT
