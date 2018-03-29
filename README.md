@@ -1,4 +1,4 @@
-# procdot_plug-ins
+# ProcDot plug-ins
 Plug-ins for [ProcDot](http://procdot.com/) .<br/>
 Credits:
 * @ProcDOT for actually writing ProcDOT
