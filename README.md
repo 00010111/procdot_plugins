@@ -38,7 +38,7 @@ Credits: <br/>
 Use Case:<br/>
 &nbsp;Submit a IP to VirusTotal via a contextmenue item. Received report will be shown within ProcDOT.<br/>
 Name:<br/>
-&nbsp;vt_url<br/>
+&nbsp;vt_ip<br/>
 Requirements:
 * VirusTotal API key (see VirusTotal how to get a free or paid one)
 * python 3
