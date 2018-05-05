@@ -1,7 +1,7 @@
 @setlocal enabledelayedexpansion && python -x "%~f0" %* & exit /b !ERRORLEVEL!
 
 # python code to get report about a url from virustotal
-# print statments will not be shown as plug-in runs with more hidden.
+# print statments will not be shown as plugin runs with more hidden.
 # change vt_url.pdp 'RunHidden' to '0' in order to get the print output
 
 # Author = @b00010111
@@ -19,14 +19,14 @@ try:
 		os.environ['PROCDOTPLUGIN_CurrentNode_Details_Domain']
 		exit(1)
 except Exception as e:
-	# we do not have a Domain in the CurrentNote Details, so we do not what to show this plug-in
-	# if anything else fails above.. we do not want to show this plug-in either
+	# we do not have a Domain in the CurrentNote Details, so we do not what to show this plugin
+	# if anything else fails above.. we do not want to show this plugin either
 	print ("we could either not run the verification or the current node does not have a domain")
-	print ("if CanBeVerified is set to 0, this exception will always be triggered")
+	print ("if set CanBeVerified to 0, this exception will always be triggered")
 	exit(0)
 
 
-# get procdot plug-ins path from environment var
+# get procdot plugins path from environment var
 p = os.environ['PROCDOTPLUGIN_PluginsPath']
 out = os.environ['PROCDOTPLUGIN_ResultTXT']
 f = open(out,'w')
@@ -37,6 +37,8 @@ apipath = os.path.join(p, 'api_config.txt')
 #get api key for virustotal from config file
 try:
 	config = configparser.ConfigParser()
+	# prefix string with r to get raw sting, getting around unicode errors
+	#config.readfp(open(r'C:\Users\REM\procdot_dev\vt_plugin\api_config.txt'))
 	config.readfp(open(apipath))
 	apikey = config['virustotal']['apikey']
 	verbose = config['virustotal']['verbose']
@@ -104,6 +106,7 @@ try:
 	f.write('Direct link to report: ' + str(json_response['permalink']) + '\n')
 
 	if verbose :
+		#print ("TRUE")
 		b = json_response['scans']
 		for key, value in b.items():
 			f.write(str(key) + ' detected: ' + str(value['detected']) + ' result: ' + str(value['result']) + '\n')
@@ -111,5 +114,5 @@ except Exception as e:
 	f.write("ERROR while writing to txt file.\n")
 	f.write(str(e))
 	
-print ("END")
+print ("ENDE")
 

@@ -12,6 +12,19 @@ from time import sleep
 import configparser
 import os
 
+try:
+	#print (os.environ['PROCDOTPLUGIN_VerificationRun'])
+	if os.environ['PROCDOTPLUGIN_VerificationRun'] == '1':
+		# if we get an exception here, verificaiton failed, otherwise exit with 1
+		os.environ['PROCDOTPLUGIN_CurrentNode_Details_IP_Address']
+		exit(1)
+except Exception as e:
+	# we do not have a Domain in the CurrentNote Details, so we do not what to show this plugin
+	# if anything else fails above.. we do not want to show this plugin either
+	print ("we could either not run the verification or the current node does not have a domain")
+	print ("if set CanBeVerified to 0, this exception will always be triggered")
+	exit(0)
+
 # get procdot plugins path from environment var
 p = os.environ['PROCDOTPLUGIN_PluginsPath']
 out = os.environ['PROCDOTPLUGIN_ResultTXT']
@@ -27,6 +40,9 @@ try:
 	#config.readfp(open(r'C:\Users\REM\procdot_dev\vt_plugin\api_keys.txt'))
 	config.readfp(open(apipath))
 	apikey = config['virustotal']['apikey']
+	if apikey == "INSERT-VIRUSTOTAL-API-KEY-HERE":
+		f.write('You did not change the API key. Enter you API-key into file: ' + apipath)
+		exit(0)
 	verbose = config['virustotal']['verbose']
 	res_count = int(config['virustotal_IP']['res_count'])
 	dec_count = int(config['virustotal_IP']['dec_count'])
@@ -124,6 +140,6 @@ except Exception as e:
 	f.write("ERROR while writing to txt file.\n")
 	f.write(str(e))
 
-sleep(10)	
+#sleep(10)	
 print ("ENDE")
 

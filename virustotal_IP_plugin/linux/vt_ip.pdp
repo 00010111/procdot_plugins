@@ -10,3 +10,4 @@ RunHidden = 1
 RunExclusively = 1
 CanOverrideOtherPlugins = 0
 CanOverrideProcDot = 0
+CanBeVerified = 1
