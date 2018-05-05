@@ -1,0 +1,13 @@
+[virustotal]
+# define api key used to access virustotal
+apikey = INSERT-VIRUSTOTAL-API-KEY-HERE
+verbose = True
+[virustotal_IP]
+# how many resolutions (passive DNS) should be printed  at maximum, set 0 for none, max 1000 (limited by vt api)
+res_count = 10
+# how many URLs at this IP address that have at least 1 detection on a URL scan should be printed  at maximum, set 0 for none,
+dec_count = 10
+# how man files that have been downloaded from this IP address with at least one AV detection should be printed at maximum, set 0 for none,
+decdow_count = 10
+# how man files that have been communicating to this IP address with at least one AV detection should be printed at maximum, set 0 for none,
+deccom_count = 10
