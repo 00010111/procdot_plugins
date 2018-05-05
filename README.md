@@ -13,7 +13,7 @@ How to check if the used python modules are installed:
 Credits: <br/>
 &nbsp;@Didelphodon for the plugin idea<br/>
 Use Case:<br/>
-&nbsp;Submit a URL to VirusTotal via a contextmenue item. Receive report will be shown within ProcDOT.<br/>
+&nbsp;Submit a URL to VirusTotal via a contextmenue item. Received report will be shown within ProcDOT.<br/>
 Name:<br/>
 &nbsp;vt_url<br/>
 Requirements:
@@ -36,7 +36,7 @@ Setup:
 Credits: <br/>
 &nbsp;@Didelphodon for the plugin idea<br/>
 Use Case:<br/>
-&nbsp;Submit a IP to VirusTotal via a contextmenue item. Receive report will be shown within ProcDOT.<br/>
+&nbsp;Submit a IP to VirusTotal via a contextmenue item. Received report will be shown within ProcDOT.<br/>
 Name:<br/>
 &nbsp;vt_url<br/>
 Requirements:
