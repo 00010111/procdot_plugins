@@ -33,14 +33,17 @@ f = open(out,'w')
 #f.write('{{{style-id:default;color:black;style-id:one;color:red;style-id:two;color:white;background-color:black}}}')
 print (out)
 
-apipath = os.path.join(p, 'api_config.txt')
+apipath = os.path.join(p, 'api_keys.txt')
 #get api key for virustotal from config file
 try:
 	config = configparser.ConfigParser()
 	# prefix string with r to get raw sting, getting around unicode errors
-	#config.readfp(open(r'C:\Users\REM\procdot_dev\vt_plugin\api_config.txt'))
+	#config.readfp(open(r'C:\Users\REM\procdot_dev\vt_plugin\api_keys.txt'))
 	config.readfp(open(apipath))
 	apikey = config['virustotal']['apikey']
+	if apikey == "INSERT-VIRUSTOTAL-API-KEY-HERE":
+		f.write('You did not change the API key. Enter you API-key into file: ' + apipath)
+		exit(0)
 	verbose = config['virustotal']['verbose']
 	#print (apikey)
 except Exception as e:
