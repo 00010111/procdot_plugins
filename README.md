@@ -30,7 +30,7 @@ Setup:
 * place plugin (Linux: vt_url.py; Windows:vt_url.bat), vt_url.pdp and api_config.txt in ProcDot plugins folder
 * open api_config.txt and fill in your VirusTotal API key 
 * Linux: make vt_url.py executable
-* if you use more than one of the virustotal plugins, you just need one api_config.txt file containing all neccesary parameters
+* if you use more than one of the virustotal plugins, you just need one api_config.txt file containing all neccesary parameters for the plugins used
 
 ## VirusTotal IP plugin
 Credits: <br/>
@@ -53,4 +53,4 @@ Setup:
 * place plugin (Linux: vt_url.py; Windows:vt_url.bat), vt_url.pdp and api_config.txt in ProcDot plugins folder
 * open api_config.txt and fill in your VirusTotal API key 
 * Linux: make vt_url.py executable
-* if you use more than one of the virustotal plugins, you just need one api_config.txt file containing all neccesary parameters
+* if you use more than one of the virustotal plugins, you just need one api_config.txt file containing all neccesary parameters for the plugins used
